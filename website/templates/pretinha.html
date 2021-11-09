@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends "index.html"%}
+{% load static %}
+<html lang="en">
+
+ {%  block cabeca  %}
+ {%  endblock  %}
+
+  <!-- about -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div class="aboutheading">
+                        <h2>Pretinha...</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aboutimg">
+                        <figure><img src="{% static 'images/pretinha.jpeg'%}" alt="img" width="400px" height="400px" /></figure>
+                        <p>Leite de capivaris, leite de mula manquis sem cabeça. Quem num gosta di mé, boa gentis num é. Delegadis gente finis,
+                             bibendum egestas augue arcu ut est. Manduma pindureta quium dia nois paga. Todo mundo vê os porris que eu tomo,
+                              mas ninguém vê os tombis que eu levo! Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+                            </p>
+                        <a href="{% url 'home' %}">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+ 
+ {% block rodape %}
+ 
+ {% endblock %}
+     <!----><!-- end footer --> 
+     <!-- Javascript files--> 
+    <script src="{% static 'js/jquery.min.js' %}"></script> 
+    <script src="{% static 'js/popper.min.js' %} "></script> 
+    <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script> 
+    <script src="{% static 'js/jquery-3.0.0.min.js' %} "></script> 
+    <script src="{% static 'js/plugin.js' %} "></script>  
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %} "></script> 
+    <script src="{% static 'js/custom.js' %} "></script>
+    </body>
+    
+</html>

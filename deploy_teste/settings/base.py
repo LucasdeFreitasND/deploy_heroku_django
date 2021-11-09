@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-stu8&7p&0sjz--n2$lusotq*3=a5u#h@0si*(y#uy^-#macj!1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['secure-hamlet-08842.herokuapp.com']
+ALLOWED_HOSTS = ['secure-hamlet-08842.herokuapp.com','127.0.0.1','127.0.0.1:8000']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'website',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
 #--Whitenoise
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
